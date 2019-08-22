@@ -1,0 +1,26 @@
+.tri{
+	width: 0px;
+	height: 0px;
+	/*background-color: red;*/
+	/*border-top:60px solid transparent;*/
+	border-right: 60px solid transparent;
+	border-bottom: 60px solid yellow;
+	border-left: 60px solid transparent;
+	position: absolute;
+    }
+.cir{
+	position: relative;
+	top: 20px;
+    left: 50px;
+	width: 50px;
+	height: 50px;
+	border: 1px solid red;
+	border-radius: 50px;
+	}
+.rect{
+	position: relative;
+	top: -10px;
+	width:60px;
+	height: 60px;
+	border: 2px solid blue;
+}

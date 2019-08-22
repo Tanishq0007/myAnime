@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style type="text/css">
+		.circle {
+			width: 30px;
+			height: 30px;
+			border: 1px solid #000;
+			position: absolute;
+			border-radius: 15px;
+		}
+	</style>
+</head>
+<body>
+	<script type="text/javascript">
+		document.onclick = animateCircles;
+		function animateCircles(event) {
+			var circle = document.createElement("div");
+			circle.setAttribute("class","circle");
+			document.body.appendChild(circle);
+			circle.style.left = event.clientX + 'px';
+			circle.style.top = event.clientY + 'px';
+			circle.style.transition = "all 0.75s linear 0s";
+			circle.style.left = circle.offsetLeft - 20 + "px";
+			circle.style.top = circle.offsetTop - 20 + "px";
+			circle.style.width = "70px";
+			circle.style.height = "70px";
+			circle.style.opacity = "0.2";
+		}
+	</script>
+
+</body>
+</html>
